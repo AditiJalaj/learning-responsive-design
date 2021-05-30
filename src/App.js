@@ -21,12 +21,16 @@ function App() {
    <div>
      <p>Saepe corporis ducimus, commodi deserunt quaerat nisi voluptatem expedita, minus velit maxime consequatur laudantium tempora cum voluptas animi accusantium dolor id eaque facere aperiam magni!</p>
    </div>
+   <div>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, eum nisi repellendus aut laboriosam hic numquam officiis officia corporis repellat ad praesentium inventore quisquam. Repellendus necessitatibus debitis nam quos laudantium?</p>
+   </div>
    </div>
    </section>
    
 
    <section className="bg-dark">
-   <div className="container">
+   <div className="container split">
+   <div><img src={img2} alt="img2" /></div>
      <div><h2>Made custom</h2>
      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At modi nesciunt qui illum facere aperiam ratione placeat iste?</p></div>
      <div><img src={img1} alt="img1" /></div>
@@ -34,7 +38,7 @@ function App() {
    </section>
 
    <section className='bg-accent'>
-   <div className="container">
+   <div className="container split">
      <div><img src={img2} alt="img2" /></div>
      <div><h2>Created with Care</h2>
      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur fugiat quo et vero saepe cum, commodi vel quam.</p></div>

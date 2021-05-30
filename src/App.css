@@ -20,6 +20,7 @@ body{
 }
 .split{
   display: flex;
+  flex-direction: column;
 }
 h1,h2,h3{
   font-family: var(--font-headings);
@@ -63,4 +64,20 @@ section{
 .bg-dark h2,
 .bg-accent h2{
   color:var(--light-color)
+}
+
+@media (min-width:40em){
+  .split{
+   flex-direction: row;
+  }
+
+  /* direct children of .split will have equal columns */
+  .split > *{
+    flex-basis:100%
+  }
+
+  /* an element which has a sibling before it  */
+  .split > * + *{
+    margin-left: 4em;
+  }
 }
